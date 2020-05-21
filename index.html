@@ -1,12 +1,73 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Седона</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#.html">Информация</a></li>
+				<li><a href="#.html">Фото и видео</a></li>
+				<li><a href="#.html">Карта штата</a></li>
+				<li><a href="catalog.html">Гостиницы</a></li>
+			</ul>
+			<a>
+				<img src="img/index-logo.svg" alt="Логотип"> 
+			</a>			
+		</nav>
+	</header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+	<main>
+		<!--Заголовок нужно будет скрыть-->
+		<h1>Седона</h1>
+		<img scr="img/sedona-main.png" width=1200 height=509 alt="Добро пожаловать в Седона">
+		<p>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
+		<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+		<p>Заинтересовались?<br>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+		<section>
+			<!--Здесь будет форма поиска-->
+			<h2>Поиск гостиницы в Седоне</h2>
+			<table>
+				<tr>
+					<td>Дата заезда:</td>
+					<td>24 апреля 2017</td>
+				</tr>
+				<tr>
+					<td>Дата выезда:</td>
+					<td>4 июля 2017</td>
+				</tr>
+				<tr>
+					<td>Взрослые</td>
+					<td>2</td>
+					<td>Дети</td>
+					<td>0</td>
+				</tr>
+				<!--Выше в таблице надо применить colespan, чтобы уравновесить кол-во ячеек,но я не могу понять как-->
+				<button type="button">Найти</button>
+			</table>
+		</section>
+		<footer>
+			<section>
+				<p>#visitSEDONA</p>
+				<p>ТЕЛ: +7(495) 666-01</p>
+			</section>
+			<section>
+				<ul>
+					<li><img scr="img/twitter.png"><a href="twitter.html"></a></li>
+					<li><img scr="img/facebook.png"><a href="facebook.html"></a></li>
+					<li><img scr="img/youtube.png"><a href="youtube.html"></a></li>
+				</ul>
+			</section>
+			<section>
+				<p>Website by</p>
+				<a img src="img/logo-htmlacademy.png" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+			</section>
+		</footer>
 
-  </body>
+
+	</main>
+
+</body>
 </html>
