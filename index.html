@@ -1,72 +1,77 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="utf-8">
-	<title>Седона</title>
+    <meta charset="utf-8">
+    <title>Седона</title>
 </head>
 <body>
-	<header>
-		<nav>
-			<a>
-				<img src="img/index-logo.svg" alt="Логотип Sedona">
-			</a>
-			<ul>
-				<li><a href="info.html">Информация</a></li>
-				<li><a href="photo-video.html">Фото и видео</a></li>
-				<li><a href="map.html">Карта штата</a></li>
-				<li><a>Гостиницы</a></li>
-			</ul>		
-		</nav>
-	</header>
+    <header>
+        <nav>
+            <a>
+                <img src="img/index-logo.svg" alt="Логотип городка Седона">
+            </a>
+            <ul>
+                <li><a href="info.html">Информация</a></li>
+                <li><a href="photo-video.html">Фото и видео</a></li>
+                <li><a href="map.html">Карта штата</a></li>
+                <li><a href="catalog.html">Гостиницы</a></li>
+            </ul>
+        </nav>
+    </header>
 
-	<main>
-		<!--Заголовок нужно будет скрыть-->
-		<h1>Седона</h1>
-		<img src="img/sedona-main.jpg" width=1200 height=509 alt="Добро пожаловать в Седона">
-		<p>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
-		<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-		<p>Заинтересовались?<br>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-		<section>
-			<!--Здесь будет форма поиска-->
-			<h2>Поиск гостиницы в Седоне</h2>
-			<table>
-				<tr>
-					<td>Дата заезда:</td>
-					<td>24 апреля 2017</td>
-				</tr>
-				<tr>
-					<td>Дата выезда:</td>
-					<td>4 июля 2017</td>
-				</tr>
-				<tr>
-					<td>Взрослые</td>
-					<td>2</td>
-					<td>Дети</td>
-					<td>0</td>
-				</tr>
-			</table>
-			<button type="button">Найти</button>
-		</section>
-		<footer>
-			<div>
-				<p>#visitSEDONA</p>
-				<p>ТЕЛ: +7(495) 666-01</p>
-			</div>
-			<div>
-				<ul>
-					<li><img src="img/twitter.svg" alt="Логотип Twitter"><a href="twitter.html"></a></li>
-					<li><img src="img/fb-icon.svg" alt="Логотип Facebook"><a href="facebook.html"></a></li>
-					<li><img src="img/youtube.svg" alt="Логотип Youtube"><a href="youtube.html"></a></li>
-				</ul>
-			</div>
-			<div>
-				<p>Website by</p>
-				<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width=115 height=41 alt="Логотип Академии"></a>
-			</div>
-		</footer>
+    <main>
+        <h1 class="visually-hidden">Седона</h1>
+        <img src="img/sedona-main.jpg" width=1200 height=509 alt="Добро пожаловать в Седона!Красивый вид на скалистый каньон">
+        <p>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <p>Заинтересовались?<br>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <section>
+            <h2>Поиск гостиницы в Седоне</h2>
+            <form action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                    <label for="date-check-in">Дата заезда:</label>
+                    <input id="date-check-in" type="text" name="date" placeholder="24 апреля 2017">
+                    <img src="img/calendar.svg" width=21 height=22.04 alt="Выбор даты">
+                </p>
+                <p>
+                    <label for="date-check-out">Дата выезда:</label>
+                    <input id="date-check-out" type="text" name="date" placeholder="4 июля 2017">
+                    <img src="img/calendar.svg" width=21 height=22.04 alt="Выбор даты">
+                </p>
+                <p>
+                    <label for="adults">Взрослые:</label>
+                    <img src="img/minus.svg" width=12 height=3>
+                    <input id="adults" type="text" name="date" placeholder="2">
+                    <img src="img/plus.svg" width=11 height=11>
+                </p>
+                <p>
+                    <label for="children">Дети:</label>
+                    <button type="button">-</button>
+                    <input id="children" type="text" name="date" placeholder="0">
+                    <button type="button">+</button>
+                </p>
+                <button type="submit">Найти</button>
+            </form>
+        </section>
 
+        <footer>
+            <div>
+                <p>#visitSEDONA</p>
+                <p>ТЕЛ:<a href="tel:749566601">+7(495)666-01</a></p>
+            </div>
+            <div>
+                <ul>
+                    <li><img src="img/twitter.svg" alt="Логотип Twitter"><a href="twitter.html"></a></li>
+                    <li><img src="img/fb-icon.svg" alt="Логотип Facebook"><a href="facebook.html"></a></li>
+                    <li><img src="img/youtube.svg" alt="Логотип Youtube"><a href="youtube.html"></a></li>
+                </ul>
+            </div>
+            <div>
+                <p>Website by</p>
+                <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width=115 height=41 alt="Логотип HTML-Академии"></a>
+            </div>
+        </footer>
 
-	</main>
-
+    </main>
 </body>
 </html>
