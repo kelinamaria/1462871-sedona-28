@@ -3,75 +3,82 @@
 <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <a>
-                <img src="img/index-logo.svg" alt="Логотип городка Седона">
-            </a>
-            <ul>
-                <li><a href="info.html">Информация</a></li>
-                <li><a href="photo-video.html">Фото и видео</a></li>
-                <li><a href="map.html">Карта штата</a></li>
-                <li><a href="catalog.html">Гостиницы</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h1 class="visually-hidden">Седона</h1>
-        <img src="img/sedona-main.jpg" width=1200 height=509 alt="Добро пожаловать в Седона!Красивый вид на скалистый каньон">
-        <p>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        <p>Заинтересовались?<br>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <section>
-            <h2>Поиск гостиницы в Седоне</h2>
-            <form action="https://echo.htmlacademy.ru" method="post">
-                <p>
-                    <label for="date-check-in">Дата заезда:</label>
-                    <input id="date-check-in" type="text" name="date" placeholder="24 апреля 2017">
-                    <button type="button"><img src="img/calendar.svg" alt="Календарь"></button>
-                </p>
-                <p>
-                    <label for="date-check-out">Дата выезда:</label>
-                    <input id="date-check-out" type="text" name="date" placeholder="4 июля 2017">
-                    <button type="button"><img src="img/calendar.svg" alt="Календарь"></button>
-                </p>
-                <p>
-                    <label for="adults">Взрослые:</label>
-                    <button type="button"><img src="img/minus.svg" alt="Минус"></button>
-                    <input id="adults" type="text" name="date" placeholder="2">
-                    <button type="button"><img src="img/plus.svg" alt="Плюс"></button>
-                </p>
-                <p>
-                    <label for="children">Дети:</label>
-                    <button type="button"><img src="img/minus.svg" alt="Минус"></button>
-                    <input id="children" type="text" name="date" placeholder="0">
-                    <button type="button"><img src="img/plus.svg" alt="Плюс"></button>
-                </p>
-                <button type="submit">Найти</button>
-            </form>
-        </section>
-
-        <footer>
-            <div>
-                <p>#visitSEDONA</p>
-                <p>ТЕЛ:<a href="tel:749566601">+7(495)666-01</a></p>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="twitter.html"><img src="img/twitter.svg" alt="Логотип Twitter"></a></li>
-                    <li><a href="facebook.html"><img src="img/fb-icon.svg" alt="Логотип Facebook"></a></li>
-                    <li><a href="youtube.html"><img src="img/youtube.svg" alt="Логотип Youtube"></a></li>
+    <div class="main-container">
+        <header>
+            <nav class="main-navigation">
+                <a>
+                    <img src="img/index-logo.svg" alt="Логотип городка Седона">
+                </a>
+                <ul class="site-navigation">
+                    <li><a href="info.html">Информация</a></li>
+                    <li><a href="photo-video.html">Фото и видео</a></li>
+                    <li><a href="map.html">Карта штата</a></li>
+                    <li><a href="catalog.html">Гостиницы</a></li>
                 </ul>
-            </div>
-            <div>
-                <p>Website by</p>
-                <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width=115 height=41 alt="Логотип HTML-Академии"></a>
-            </div>
-        </footer>
+            </nav>
+        </header>
 
-    </main>
+        <main>
+            <h1 class="visually-hidden">Седона</h1>
+            <img src="img/sedona-main.jpg" width=1200 height=509 alt="Добро пожаловать в Седона!Красивый вид на скалистый каньон">
+            <p class="sedona-main-bold">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+            <p class="sedona-main-interest">Заинтересовались?</p>
+            <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <section class="form-search">
+                <h2>Поиск гостиницы в Седоне</h2>
+                <form action="https://echo.htmlacademy.ru" method="post">
+                    <p>
+                        <label for="date-check-in">Дата заезда:</label>
+                        <input id="date-check-in" type="text" name="date" placeholder="24 апреля 2017">
+                        <button type="button"><img src="img/calendar.svg" alt="Календарь"></button>
+                    </p>
+                    <p>
+                        <label for="date-check-out">Дата выезда:</label>
+                        <input id="date-check-out" type="text" name="date" placeholder="4 июля 2017">
+                        <button type="button"><img src="img/calendar.svg" alt="Календарь"></button>
+                    </p>
+                    <p>
+                        <label for="adults">Взрослые:</label>
+                        <button type="button"><img src="img/minus.svg" alt="Минус"></button>
+                        <input id="adults" type="text" name="date" placeholder="2">
+                        <button type="button"><img src="img/plus.svg" alt="Плюс"></button>
+                    </p>
+                    <p>
+                        <label for="children">Дети:</label>
+                        <button type="button"><img src="img/minus.svg" alt="Минус"></button>
+                        <input id="children" type="text" name="date" placeholder="0">
+                        <button type="button"><img src="img/plus.svg" alt="Плюс"></button>
+                    </p>
+                    <button type="submit">Найти</button>
+                </form>
+            </section>
+
+            <footer class="page-footer">
+                <div class="footer">
+                    <p>#visitSEDONA</p>
+                    <p>ТЕЛ:<a href="tel:74956660166">+7(495)666-01-66</a></p>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="twitter.html"><img src="img/twitter.svg" alt="Логотип Twitter"></a></li>
+                        <li><a href="facebook.html"><img src="img/fb-icon.svg" alt="Логотип Facebook"></a></li>
+                        <li><a href="youtube.html"><img src="img/youtube.svg" alt="Логотип Youtube"></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Website by</p>
+                    <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width=115 height=41 alt="Логотип HTML-Академии"></a>
+                </div>
+            </footer>
+
+        </main>
+    </div>
 </body>
 </html>

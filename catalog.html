@@ -3,94 +3,98 @@
 <head>
     <meta charset="utf-8">
     <title>Гостиницы</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="index.html">
-                <img src="img/index-logo.svg" alt="Логотип городка Седона">
-            </a>
-            <ul>
-                <li><a href="info.html">Информация</a></li>
-                <li><a href="photo-video.html">Фото и видео</a></li>
-                <li><a href="map.html">Карта штата</a></li>
-                <li><a>Гостиницы</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="main-container">
+        <header>
+            <nav class="main-navigation">
+                <a href="index.html">
+                    <img src="img/index-logo.svg" alt="Логотип городка Седона">
+                </a>
+                <ul class="site-navigation">
+                    <li><a href="info.html">Информация</a></li>
+                    <li><a href="photo-video.html">Фото и видео</a></li>
+                    <li><a href="map.html">Карта штата</a></li>
+                    <li class="site-navigation-current"><a>Гостиницы</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <article>
-            <div><img src="img/amara-resort.jpg" width=135 height=90 alt="Гостиница Amara resort">
-            </div>
-            <div>
-                <h2>Amara resort & Spa</h2>
-                <span>Гостиница</span>
-                <span>от 4000 Р.</span>
-                <a href="#">Подробнее</a>
-                <a href="#">Забронировать</a>
-            </div>
-            <div>
-                <div>
-                    <img src="img/star4.svg" alt="Рейтинг 4 звезды">
+        <main>
+            <article class="hotel">
+                <div class="hotel-image-container"><img class="hotel-image" src="img/amara-resort.jpg" width=135 height=90 alt="Гостиница Amara resort">
                 </div>
-                <div>Рейтинг: 8,5</div>
-            </div>
-        </article>
-        <article>
-            <div><img src="img/desert-quail-inn.jpg" width=135 height=90 alt="Мотель Desert Quail Inn">
-            </div>
-            <div>
-                <h2>Desert Quail Inn</h2>
-                <span>Мотель</span>
-                <span>от 3000 Р.</span>
-                <a href="#">Подробнее</a>
-                <a href="#">Забронировать</a>
-            </div>
-            <div>
-                <div>
-                    <img src="img/star3.svg" alt="Рейтинг 3 звезды">
+                <div class="hotel-container-left">
+                    <h2 class="hotel-name">Amara resort & Spa</h2>
+                    <span class="hotel-info-text">Гостиница</span>
+                    <span class="hotel-info-text">от 4000 Р.</span>
+                    <a href="#" class="hotel-link-text">Подробнее</a>
+                    <a href="#" class="hotel-link-text hotel-link-text-brown">Забронировать</a>
                 </div>
-                <div>Рейтинг: 8,9</div>
-            </div>
-        </article>
+                <div class="hotel-raiting-container">
+                    <div class="hotel-raiting-image">
+                        <img class="hotel-image-stars" src="img/star4.svg" alt="Рейтинг 4 звезды">
+                    </div>
+                    <span class="hotel-raiting-text">Рейтинг: 8,5</span>
+                </div>
+            </article>
+            <article class="hotel">
+                <div class="hotel-image-container"><img class="hotel-image" src="img/desert-quail-inn.jpg" width=135 height=90 alt="Мотель Desert Quail Inn">
+                </div>
+                <div class="hotel-container-left">
+                    <h2 class="hotel-name">Desert Quail Inn</h2>
+                    <span class="hotel-info-text">Мотель</span>
+                    <span class="hotel-info-text">от 3000 Р.</span>
+                    <a href="#" class="hotel-link-text">Подробнее</a>
+                    <a href="#" class="hotel-link-text hotel-link-text-brown">Забронировать</a>
+                </div>
+                <div class="hotel-raiting-container">
+                    <div class="hotel-raiting-image">
+                        <img class="hotel-image-stars" src="img/star3.svg" alt="Рейтинг 3 звезды">
+                    </div>
+                    <span class="hotel-raiting-text">Рейтинг: 8,9</span>
+                </div>
+            </article>
+            <article class="hotel">
+                <div class="hotel-image-container"><img class="hotel-image" src="img/villas-ad-poco-diablo.jpg" width=135 height=90 alt="Апартаменты Villas ad poco diablo">
+                </div>
+                <div class="hotel-container-left">
+                    <h2 class="hotel-name">Villas ad poco diablo</h2>
+                    <span class="hotel-info-text">Апартаменты</span>
+                    <span class="hotel-info-text">от 2000 Р.</span>
+                    <a href="#" class="hotel-link-text">Подробнее</a>
+                    <a href="#" class="hotel-link-text hotel-link-text-brown">Забронировать</a>
+                </div>
+                <div class="hotel-raiting-container">
+                    <div class="hotel-raiting-image">
+                        <img class="hotel-image-stars" src="img/star2.svg" alt="Рейтинг 2 звезды">
+                    </div>
+                    <span class="hotel-raiting-text">Рейтинг: 9,2</span>
+                </div>
+            </article>
+        </main>
 
-        <article>
-            <div><img src="img/villas-ad-poco-diablo.jpg" width=135 height=90 alt="Апартаменты Villas ad poco diablo">
+        <footer class="page-footer">
+            <div class="footer">
+                <p>#visitSEDONA</p>
+                <p>ТЕЛ:<a href="tel:74956660166">+7(495)666-01-66</a></p>
             </div>
             <div>
-                <h2>Villas ad poco diablo</h2>
-                <span>Апартаменты</span>
-                <span>от 2000 Р.</span>
-                <a href="#">Подробнее</a>
-                <a href="#">Забронировать</a>
+                <ul>
+                    <li><a href="twitter.html"><img src="img/twitter.svg" alt="Логотип Twitter"></a></li>
+                    <li><a href="facebook.html"><img src="img/fb-icon.svg" alt="Логотип Facebook"></a></li>
+                    <li><a href="youtube.html"><img src="img/youtube.svg" alt="Логотип Youtube"></a></li>
+                </ul>
             </div>
             <div>
-                <div>
-                    <img src="img/star2.svg" alt="Рейтинг 2 звезды">
-                </div>
-                <div>Рейтинг: 9,2</div>
+                <p>Website by</p>
+                <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width=115 height=41 alt="Логотип Академии"></a>
             </div>
-        </article>
-    </main>
-
-    <footer>
-        <div>
-            <p>#visitSEDONA</p>
-            <p>ТЕЛ:<a href="tel:749566601">+7(495)666-01</a></p>
-        </div>
-        <div>
-            <ul>
-                <li><a href="twitter.html"><img src="img/twitter.svg" alt="Логотип Twitter"></a></li>
-                <li><a href="facebook.html"><img src="img/fb-icon.svg" alt="Логотип Facebook"></a></li>
-                <li><a href="youtube.html"><img src="img/youtube.svg" alt="Логотип Youtube"></a></li>
-            </ul>
-        </div>
-        <div>
-            <p>Website by</p>
-            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width=115 height=41 alt="Логотип Академии"></a>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>

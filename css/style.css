@@ -1,0 +1,172 @@
+:root {
+	--basic-black: #000000;
+	--basic-default-blue: #81B3D2;
+	--basic-hover-blue:#669EC0;
+	--basic-push-blue: #5496BD;
+	--basic-default-brown: #766357;
+	--basic-hover-brown: #604E43;
+	--basic-push-brown: #503E33;
+	--basic-default-grey: #f2f2f2;
+	--basic-hover-grey: #EBEBEB;
+	--basic-background-grey: #EEEEEE;
+	--basic-white: #ffffff;
+	--basic-map-white: rgba(255, 255, 255, 0.9);
+	--basic-raiting-grey: #666666;
+}
+
+/*Global*/
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "PT Sans", sans-serif;
+	font-size: 14px;
+	line-height: 26px;
+	color: var(--basic-black);
+	text-transform: uppercase;
+	background-color: var(--basic-default-grey);
+}
+
+.main-container {
+	width: 1200px;
+	margin: 0 auto;
+	background-color: var(--basic-white);
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Main navigation */
+
+.main-navigation {
+	font-weight: bold;
+}
+
+.site-navigation {
+	list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+	color: var(--basic-default-brown);
+}
+
+.site-navigation a:link {
+	color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+	color: var(--basic-default-blue);
+}
+
+.site-navigation a:active {
+	opacity: 0.3;
+}
+
+ul li {
+	display: inline-block;
+}
+
+/*Main index*/
+
+main p {
+	text-align: center;
+}
+
+.sedona-main-bold {
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.sedona-main-interest {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.visually-hidden {
+	display: none;
+}
+
+/*Search form*/
+
+.form-search {
+	text-align: center;
+}
+
+section h2 {
+	text-align: center;
+	font-size: 21px;
+}
+
+/*Main catalog*/
+
+.hotel {
+
+}
+
+.hotel-image-container {
+
+}
+
+.hotel-image {
+
+}
+
+.hotel-container-left {
+
+}
+
+.hotel-name {
+	font-size: 21px;
+}
+
+.hotel-info-text,
+.hotel-link-text,
+.hotel-raiting-text {
+	line-height: 21px;
+}
+
+.hotel-link-text {
+	color: var(--basic-white);
+	font-weight: bold;
+	background-color: var(--basic-default-blue);
+}
+
+.hotel-link-text-brown {
+	background-color: var(--basic-default-brown);
+}
+
+.hotel-raiting-container {
+
+}
+
+.hotel-raiting-image {
+
+}
+
+.hotel-image-stars {
+
+}
+
+.hotel-raiting-text {
+	color: var(--basic-raiting-grey);
+}
+
+/*Main footer*/
+
+.footer {
+	font-weight: bold;
+	font-size: 21px;
+	text-align: center;
+}
+
+.page-footer p a {
+	color: var(--basic-black);
+}
+
