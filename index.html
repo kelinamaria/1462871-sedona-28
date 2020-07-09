@@ -12,14 +12,12 @@
     <div class="main-container">
         <header class="main-header">
             <nav class="main-navigation">
+                <a>
+                    <img class="site-navigation-logo" src="img/index-logo.svg" alt="Логотип городка Седона">
+                </a>
                 <ul class="site-navigation">
                     <li><a class="site-navigation-item" href="info.html">Информация</a></li>
                     <li><a class="site-navigation-item" href="photo-video.html">Фото и видео</a></li>
-                    <li>
-                        <a>
-                            <img class="site-navigation-logo" src="img/index-logo.svg" alt="Логотип городка Седона">
-                        </a>
-                    </li>
                     <li><a class="site-navigation-item" href="map.html">Карта штата</a></li>
                     <li><a class="site-navigation-item" href="catalog.html">Гостиницы</a></li>
                 </ul>
@@ -28,57 +26,127 @@
 
         <main>
             <h1 class="visually-hidden">Седона</h1>
-            <img src="img/sedona-main.jpg" width=1200 height=509 alt="Добро пожаловать в Седона!Красивый вид на скалистый каньон">
-            <p class="sedona-main-bold">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
-            <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-            <p class="sedona-main-interest">Заинтересовались?</p>
-            <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <section class="form-search">
-                <h2>Поиск гостиницы в Седоне</h2>
-                <form action="https://echo.htmlacademy.ru" method="post">
-                    <p>
-                        <label for="date-check-in">Дата заезда:</label>
-                        <input id="date-check-in" type="text" name="date" placeholder="24 апреля 2017">
-                        <button type="button"><img src="img/calendar.svg" alt="Календарь"></button>
-                    </p>
-                    <p>
-                        <label for="date-check-out">Дата выезда:</label>
-                        <input id="date-check-out" type="text" name="date" placeholder="4 июля 2017">
-                        <button type="button"><img src="img/calendar.svg" alt="Календарь"></button>
-                    </p>
-                    <p>
-                        <label for="adults">Взрослые:</label>
-                        <button type="button"><img src="img/minus.svg" alt="Минус"></button>
-                        <input id="adults" type="text" name="date" placeholder="2">
-                        <button type="button"><img src="img/plus.svg" alt="Плюс"></button>
-                    </p>
-                    <p>
-                        <label for="children">Дети:</label>
-                        <button type="button"><img src="img/minus.svg" alt="Минус"></button>
-                        <input id="children" type="text" name="date" placeholder="0">
-                        <button type="button"><img src="img/plus.svg" alt="Плюс"></button>
-                    </p>
-                    <button type="submit">Найти</button>
-                </form>
+            <div class="main-page-image">
+                <img src="img/sedona-main.jpg" width=1200 height=509 alt="Добро пожаловать в Седона!Красивый вид на скалистый каньон" />
+            </div>
+            <div class="welcome-text">
+                <p class="sedona-main-bold">Седона — небольшой городок в Аризоне,<br /> заслуживающий большего!</p>
+                <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+            </div>
+            <section>
+                <h2 class="visually-hidden">Преимущества</h2>
+                <ul class="advantage-list">
+                    <li class="advantage-item">
+                        <div class="advanatage-item-content">
+                            <h3>Настоящий<br />городок</h3>
+                            <p>— №1 —</p>
+                            <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+                        </div>
+                        <div class="advantage-item-image">
+                            <img src="img/advantage-image-1.jpg" alt="Вид города с деревянным зданием">
+                        </div>
+                    </li>
+                    <li class="white-background-flex">
+                        <div class="advanatage-item-content white-background">
+                            <img src="img/accomodation.svg" alt="Дом">
+                            <h3>Жильё</h3>
+                            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                        </div>
+                        <div class="advanatage-item-content white-background">
+                            <img src="img/food.svg" alt="Бургер">
+                            <h3>Еда</h3>
+                            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                        </div>
+                        <div class="advanatage-item-content white-background">
+                            <img src="img/souvenirs.svg" alt="Подарочная коробка">
+                            <h3>Сувениры</h3>
+                            <p>Не только китайского, но и местного производства!</p>
+                        </div>
+                    </li>
+                    <li class="advantage-item">
+                        <div class="advantage-item-image">
+                            <img src="img/advantage-image-2.jpg" alt="Вид на скалистый каньон">
+                        </div>
+                        <div class="advanatage-item-content">
+                            <h3>Там есть<br /> мост дьявола</h3>
+                            <p>— №2 —</p>
+                            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                        </div>
+                    </li>
+                    <li class="grey-background-flex">
+                        <div class="advanatage-item-content grey-background">
+                            <h3>Небольшая<br />площадь</h3>
+                            <p>— №3 —</p>
+                            <p>все достопримечательности<br /> находятся очень близко</p>
+                        </div>
+                        <div class="advanatage-item-content grey-background">
+                            <h3>Красивая<br /> дорога</h3>
+                            <p>— №4 —</p>
+                            <p>ехать в седону из лас-вегаса совсем<br /> не скучно!</p>
+                        </div>
+                        <div class="advanatage-item-content grey-background">
+                            <h3>Мало<br /> туристов</h3>
+                            <p>— №5 —</p>
+                            <p>большинство едет в гранд каньон<br /> и толпится там</p>
+                        </div>
+                    </li>
+                </ul>
             </section>
 
+            <div class="before-search-form-text"><h2 class="sedona-main-interest">Заинтересовались?</h2>
+                <p>Укажите предполагаемые даты поездки,<br /> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            </div>
+            <section class="map-and-search-form">
+                <h2 class="visually-hidden">Карта</h2>
+                <img src="img/map.png" width=1199 height=594 alt="карта города">
+                <section class="form-search">
+                    <div class="form-search-heading">
+                        <h2>Поиск гостиницы в Седоне</h2>
+                    </div>
+                    <div class="form-search-body">
+                        <form action="https://echo.htmlacademy.ru" method="post">
+                            <div class="table-row">
+                                <label for="date-check-in">Дата заезда:</label>
+                                <input id="date-check-in" type="text" name="date" value="24 апреля 2017">
+                                <button class="form-button form-button-calendar" type="button"><img src="img/calendar.svg" alt="Календарь"></button>
+                            </div>
+                            <div class="table-row">
+                                <label for="date-check-out">Дата выезда:</label>
+                                <input id="date-check-out" type="text" name="date" value="4 июля 2017">
+                                <button class="form-button form-button-calendar" type="button"><img src="img/calendar.svg" alt="Календарь"></button>
+                            </div>
+                            <div class="table-row">
+                                <label for="adults">Взрослые:</label>
+                                <button class="form-button form-button-minus" type="button"><img src="img/minus.svg" alt="Минус"></button>
+                                <input class="form-number-adults" id="adults" type="text" name="date" value="2">
+                                <button class="form-button form-button-plus" type="button"><img src="img/plus.svg" alt="Плюс"></button>
+                                <label class="children-align-right" for="children">Дети:</label>
+                                <button class="form-button form-button-minus" type="button"><img src="img/minus.svg" alt="Минус"></button>
+                                <input class="form-number-children" id="children" type="text" name="date" value="0">
+                                <button class="form-button form-button-plus" type="button"><img src="img/plus.svg" alt="Плюс"></button>
+                            </div>
+                            <button class="search-button" type="submit">Найти</button>
+                        </form>
+                    </div>
+                </section>
+            </section>
             <footer class="page-footer">
-                <div class="footer">
-                    <p>#visitSEDONA</p>
-                    <p>ТЕЛ:<a href="tel:74956660166">+7(495)666-01-66</a></p>
+                <div class="footer-contacts width33prc">
+                    <p>#visitSEDONA
+                        <br />ТЕЛ: <a href="tel:74956660166">+7(495)666-01-66</a>
+                    </p>
                 </div>
-                <div class="container-social-media">
+                <div class="container-social-media width33prc">
                     <ul class="list-social-media">
-                        <li><a href="twitter.html"><img src="img/twitter.svg" alt="Логотип Twitter"></a></li>
+                        <li><a href="twitter.html"><img src="img/twitter-icon.svg" alt="Логотип Twitter"></a></li>
                         <li><a href="facebook.html"><img src="img/fb-icon.svg" alt="Логотип Facebook"></a></li>
-                        <li><a href="youtube.html"><img src="img/youtube.svg" alt="Логотип Youtube"></a></li>
+                        <li><a href="youtube.html"><img src="img/youtube-icon.svg" alt="Логотип Youtube"></a></li>
                     </ul>
                 </div>
-                <div>
-                    <p><span>Website by</span><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width=115 height=41 alt="Логотип HTML-Академии"></a></p>
+                <div class="width33prc">
+                    <div class="footer-copyrights"><span>Website by</span><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width=115 height=41 alt="Логотип HTML-Академии"></a></div>
                 </div>
             </footer>
-
         </main>
     </div>
 </body>
