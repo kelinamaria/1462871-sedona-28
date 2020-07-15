@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title>Седона</title>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"href>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-body">
@@ -16,10 +16,10 @@
                     <img class="site-navigation-logo" src="img/index-logo.svg" alt="Логотип городка Седона">
                 </a>
                 <ul class="site-navigation">
-                    <li><a class="site-navigation-item" href="info.html">Информация</a></li>
-                    <li><a class="site-navigation-item" href="photo-video.html">Фото и видео</a></li>
-                    <li><a class="site-navigation-item" href="map.html">Карта штата</a></li>
-                    <li><a class="site-navigation-item" href="catalog.html">Гостиницы</a></li>
+                    <li><a href="info.html" class="site-navigation-item">Информация</a></li>
+                    <li><a href="photo-video.html" class="site-navigation-item">Фото и видео</a></li>
+                    <li><a href="map.html" class="site-navigation-item">Карта штата</a></li>
+                    <li><a href="catalog.html" class="site-navigation-item">Гостиницы</a></li>
                 </ul>
             </nav>
         </header>
@@ -106,9 +106,7 @@
                 <h2 class="visually-hidden">Карта</h2>
                 <img src="img/map.png" width=1199 height=594 alt="карта города">
                 <section class="form-search">
-                    <div class="form-search-heading" onclick="toggleForm();">
-                        <h2>Поиск гостиницы в Седоне</h2>
-                    </div>
+                    <button class="form-search-heading" onclick="toggleForm();">Поиск гостиницы в Седоне</button>
                     <div class="form-search-body" id="hotel-form">
                         <form action="https://echo.htmlacademy.ru" method="post">
                             <div class="table-row">
@@ -138,8 +136,8 @@
             </section>
             <footer class="page-footer">
                 <div class="footer-contacts width33prc">
-                    <p>#visitSEDONA
-                        <br />ТЕЛ: <a href="tel:74956660166">+7(495)666-01-66</a>
+                    <p>#visitsedona
+                        <br />Тел: <a href="tel:74956660166">+7(495)666-01-66</a>
                     </p>
                 </div>
                 <div class="container-social-media width33prc">
@@ -156,6 +154,6 @@
         </main>
     </div>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
 </body>
 </html>

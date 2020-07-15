@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title>Гостиницы</title>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-body">
@@ -16,67 +16,69 @@
                     <img class="site-navigation-logo" src="img/index-logo.svg" alt="Логотип городка Седона">
                 </a>
                 <ul class="site-navigation">
-                    <li><a class="site-navigation-item" href="info.html">Информация</a></li>
-                    <li><a class="site-navigation-item" href="photo-video.html">Фото и видео</a></li>
-                    <li><a class="site-navigation-item" href="map.html">Карта штата</a></li>
+                    <li><a href="info.html" class="site-navigation-item">Информация</a></li>
+                    <li><a href="photo-video.html" class="site-navigation-item">Фото и видео</a></li>
+                    <li><a href="map.html" class="site-navigation-item">Карта штата</a></li>
                     <li><a class="site-navigation-item">Гостиницы</a></li>
                 </ul>
             </nav>
         </header>
 
         <main class="page-main-catalog">
-            <section class="catalog-filter-container">
-                <div class="infrastructure-accomodation-container">
-                    <h3>Инфраструктура:</h3>
-                    <div class="checkbox-filter-row">
-                        <input id="filter1" type="checkbox" name="filter1" value="1" checked />
-                        <label for="filter1">Бассейн</label>
-                    </div>
-                    <div class="checkbox-filter-row">
-                        <input id="filter2" type="checkbox" name="filter2" value="2" />
-                        <label for="filter2">Парковка</label>
-                    </div>
-                    <div class="checkbox-filter-row">
-                        <input id="filter3" type="checkbox" name="filter3" value="3" />
-                        <label for="filter3">wi-fi</label>
-                    </div>
-                </div>
-                <div class="infrastructure-accomodation-container">
-                    <h3>Тип жилья:</h3>
-                    <div class="checkbox-filter-row">
-                        <input id="filter4" type="checkbox" name="filter4" value="4" checked />
-                        <label for="filter4">Гостиница</label>
-                    </div>
-                    <div class="checkbox-filter-row">
-                        <input id="filter5" type="checkbox" name="filter5" value="5" checked />
-                        <label for="filter5">Мотель</label>
-                    </div>
-                    <div class="checkbox-filter-row">
-                        <input id="filter6" type="checkbox" name="filter6" value="6" checked />
-                        <label for="filter6">Апартаменты</label>
-                    </div>
-                </div>
-                <div class="cost-per-day-container">
-                    <h3>Стоимость в сутки (Р):</h3>
-                    <div class="filter-price">
-                        <label>От
-                            <input type="text" name="price-from" value="0">
-                        </label>
-                        <label>До
-                            <input type="text" name="price-to" value="3000">
-                        </label>
-                    </div>
-                    <div class="price-range-runner">
-                        <div class="price-range-runner-chosen" style="width: 86%;">
-                            <div class="runner">
-                            </div>
-                            <div class="runner">
-                            </div>
+            <form action="https://echo.htmlacademy.ru" method="post">
+                <section class="catalog-filter-container">
+                    <div class="infrastructure-accomodation-container">
+                        <h3>Инфраструктура:</h3>
+                        <div class="checkbox-filter-row">
+                            <input id="filter1" type="checkbox" name="filter1" value="1" checked />
+                            <label for="filter1">Бассейн</label>
+                        </div>
+                        <div class="checkbox-filter-row">
+                            <input id="filter2" type="checkbox" name="filter2" value="2" />
+                            <label for="filter2">Парковка</label>
+                        </div>
+                        <div class="checkbox-filter-row">
+                            <input id="filter3" type="checkbox" name="filter3" value="3" />
+                            <label for="filter3">wi-fi</label>
                         </div>
                     </div>
-                    <button class="filter-price-button" type="submit">Показать</button>
-                </div>
-            </section>
+                    <div class="infrastructure-accomodation-container">
+                        <h3>Тип жилья:</h3>
+                        <div class="checkbox-filter-row">
+                            <input id="filter4" type="checkbox" name="filter4" value="4" checked />
+                            <label for="filter4">Гостиница</label>
+                        </div>
+                        <div class="checkbox-filter-row">
+                            <input id="filter5" type="checkbox" name="filter5" value="5" checked />
+                            <label for="filter5">Мотель</label>
+                        </div>
+                        <div class="checkbox-filter-row">
+                            <input id="filter6" type="checkbox" name="filter6" value="6" checked />
+                            <label for="filter6">Апартаменты</label>
+                        </div>
+                    </div>
+                    <div class="cost-per-day-container">
+                        <h3>Стоимость в сутки (Р):</h3>
+                        <div class="filter-price">
+                            <label>От
+                                <input type="text" name="price-from" value="0">
+                            </label>
+                            <label>До
+                                <input type="text" name="price-to" value="3000">
+                            </label>
+                        </div>
+                        <div class="price-range-runner">
+                            <div class="price-range-runner-chosen">
+                                <div class="runner">
+                                </div>
+                                <div class="runner">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="filter-price-button" type="submit">Показать</button>
+                    </div>
+                </section>
+            </form>
             <div class="sorting-panel">
                 <div class="sorting-panel-left">
                     <span class="sorting-panel-found">Найдено: 3</span>
@@ -94,14 +96,14 @@
                 <div class="hotel-image-container"><img class="hotel-image" src="img/amara-resort.jpg" width=135 height=90 alt="Гостиница Amara resort">
                 </div>
                 <div class="hotel-container-left">
-                    <a class="hotel-name" href="#">Amara resort & Spa</a>
+                    <a href="#" class="hotel-name">Amara resort & Spa</a>
                     <div class="hotel-info-container">
                         <div class="hotel-info-left">
                             <span class="hotel-info-text">Гостиница</span>
                             <a href="#" class="hotel-link-text">Подробнее</a>
                         </div>
                         <div class="hotel-info-right">
-                            <span class="hotel-info-text">от 4000 Р.</span>
+                            <span class="hotel-info-text">От 4000 Р.</span>
                             <a href="#" class="hotel-link-text hotel-link-text-brown">Забронировать</a>
                         </div>
                     </div>
@@ -117,14 +119,14 @@
                 <div class="hotel-image-container"><img class="hotel-image" src="img/desert-quail-inn.jpg" width=135 height=90 alt="Мотель Desert Quail Inn">
                 </div>
                 <div class="hotel-container-left">
-                    <a class="hotel-name" href="#">Desert Quail Inn</a>
+                    <a href="#" class="hotel-name">Desert Quail Inn</a>
                     <div class="hotel-info-container">
                         <div class="hotel-info-left">
                             <span class="hotel-info-text">Мотель</span>
                             <a href="#" class="hotel-link-text">Подробнее</a>
                         </div>
                         <div class="hotel-info-right">
-                            <span class="hotel-info-text">от 3000 Р.</span>
+                            <span class="hotel-info-text">От 3000 Р.</span>
                             <a href="#" class="hotel-link-text hotel-link-text-brown">Забронировать</a>
                         </div>
                     </div>
@@ -140,14 +142,14 @@
                 <div class="hotel-image-container"><img class="hotel-image" src="img/villas-ad-poco-diablo.jpg" width=135 height=90 alt="Апартаменты Villas ad poco diablo">
                 </div>
                 <div class="hotel-container-left">
-                    <a class="hotel-name" href="#">Villas at poco diablo</a>
+                    <a href="#" class="hotel-name">Villas at poco diablo</a>
                     <div class="hotel-info-container">
                         <div class="hotel-info-left">
                             <span class="hotel-info-text">Апартаменты</span>
                             <a href="#" class="hotel-link-text">Подробнее</a>
                         </div>
                         <div class="hotel-info-right">
-                            <span class="hotel-info-text">от 2000 Р.</span>
+                            <span class="hotel-info-text">От 2000 Р.</span>
                             <a href="#" class="hotel-link-text hotel-link-text-brown">Забронировать</a>
                         </div>
                     </div>
@@ -162,8 +164,8 @@
         </main>
         <footer class="page-footer">
             <div class="footer-contacts width33prc">
-                <p>#visitSEDONA
-                    <br />ТЕЛ: <a href="tel:74956660166">+7(495)666-01-66</a>
+                <p>#visitsedona
+                    <br />Тел: <a href="tel:74956660166">+7(495)666-01-66</a>
                 </p>
             </div>
             <div class="container-social-media width33prc">
