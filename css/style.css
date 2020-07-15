@@ -21,11 +21,7 @@
 }
 
 .page-body {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
-  position: relative;
+	height: 100%;
 }
 
 /*Global*/
@@ -33,7 +29,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 26px;
 	color: var(--basic-black);
@@ -43,10 +39,14 @@ body {
 
 .main-container {
 	width: 1200px;
+	min-height: 100%;
 	margin: 0 auto;
 	background-color: var(--basic-white);
 	position: relative;
 	box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+	display: grid;
+	grid-template-rows: min-content 1fr min-content;
+	align-content: start;
 }
 
 a {
@@ -73,15 +73,35 @@ img {
 	padding: 0;
 }
 
-.site-navigation li:nth-child(2) {
-	margin-right: 150px;
+.site-navigation li {
+	text-align: center;
 }
+
+.site-navigation li:nth-child(2) {
+	margin-right: 130px;
+	position: relative;
+	left: -12px;}
 
 
 .site-navigation li:nth-child(3) {
-	margin-left: 150px;
+	margin-left: 130px;
 }
 
+.site-navigation li:nth-child(1) {
+	
+}
+
+.site-navigation li:nth-child(2) {
+	
+}
+
+.site-navigation li:nth-child(3) {
+	
+}
+
+.site-navigation li:nth-child(4) {
+	
+}
 
 
 .site-navigation-current a:not([href]) {
@@ -90,7 +110,7 @@ img {
 
 .site-navigation-item {
 	color: var(--basic-black);
-	line-height: 56px;
+	line-height: 55px;
 }
 
 .site-navigation-logo {
@@ -120,7 +140,9 @@ main p {
 	text-align: center;
 }
 
-.sedona-main-bold {
+.welcome-text p.sedona-main-bold {
+	width: 610px;
+	margin: 0 auto 43px;
 	font-size: 21px;
 	font-weight: bold;
 }
@@ -157,7 +179,7 @@ main p {
 }
 
 .welcome-text p {
-	margin: 0 0 45px;
+	margin: 0 0 51px;
 }
 
 .advantage-list {
@@ -175,20 +197,21 @@ main p {
 	background-color: var(--basic-default-blue);
 	width: 400px;
 	height: 256px;
-	padding-top: 45px;
+	padding-top: 46px;
 	box-sizing: border-box;
 }
 
 .advanatage-item-content h3 {
+	width: 150px;
 	text-align: center;
-	margin: 0 0 25px;
+	margin: 0 auto 26px;
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 21px;
 }
 
 .advanatage-item-content p {
-	margin: 0 50px 25px;
+	margin: 0 48px 25px;
 	line-height: 21px;
 }
 
@@ -201,6 +224,7 @@ main p {
 }
 
 .advanatage-item-content.white-background {
+	padding-top: 61px;
 	height: 330px;
 	background: white;
 	text-align: center;
@@ -208,7 +232,13 @@ main p {
 
 
 .advanatage-item-content.white-background > img {
-	margin-bottom: 30px;
+	max-width: 100%;
+}
+
+.advantage-item-picture {
+	margin: 0 auto 18px;
+	width: 80px;
+	height: 80px;
 }
 
 .white-background-flex {
@@ -219,6 +249,14 @@ main p {
 	display: flex;
 }
 
+.grey-background p {
+	margin: 0 72px 25px;
+}
+
+.grey-background:nth-child(2) p {
+	margin: 0 60px 25px;
+}
+
 .advanatage-item-content.grey-background {
 	height: 256px;
 	background-color: var(--basic-default-grey);
@@ -226,13 +264,14 @@ main p {
 }
 
 .before-search-form-text {
-	padding: 58px 0 1px;
+	padding: 55px 0 0;
 	text-align: center;
-	height: 256px;
+	height: 236px;
 }
 
 .before-search-form-text p {
-	margin: 0 0 30px;
+	margin: 0 auto 30px;
+	width: 610px;
 }
 
 .before-search-form-text h2 {
@@ -250,6 +289,10 @@ section h2 {
 	position: relative;
 }
 
+.map-and-search-form img {
+	display: block;
+}
+
 .form-search {
 	position: absolute;
 	margin: 0 auto;
@@ -264,6 +307,7 @@ section h2 {
 .form-search-heading {
 	height: 86px;
 	background: var(--basic-default-brown);
+	cursor: pointer;
 }
 
 .form-search-heading h2 {
@@ -294,15 +338,15 @@ section h2 {
 
 .table-row {
 	display: flex;
-	margin-bottom: 30px;
+	margin-bottom: 29px;
 }
 
 .table-row label {
 	font-weight: bold;
 	font-size: 14px;
 	text-transform: uppercase;
-	line-height: 38px;
-	width: 120px;
+	line-height: 36px;
+	width: 114px;
 	text-align: left;
 }
 
@@ -341,7 +385,7 @@ section h2 {
 .table-row label.children-align-right {
 	text-align: right;
 	box-sizing: border-box;
-	padding-right: 30px;
+	padding-right: 25px;
 }
 
 
@@ -362,7 +406,7 @@ section h2 {
 }
 
 .infrastructure-accomodation-container {
-	width: 25%;
+	width: 255px;
 	padding-left: 72px;
 	box-sizing: border-box;
 }
@@ -373,22 +417,21 @@ section h2 {
 
 }
 
-.infrastructure-accomodation-container label {
-	display: block;
+.checkbox-filter-row {
 	line-height: 23px;
 	margin-bottom: 23px;
 }
 
-.infrastructure-accomodation-container input[type=checkbox] {
+.checkbox-filter-row input[type=checkbox] {
 	display: none;
 }
 
-.infrastructure-accomodation-container input[type=checkbox] + span {
+.checkbox-filter-row input[type=checkbox] + label {
 	position: relative;
 	display: inline-block;
 }
 
-.infrastructure-accomodation-container input[type=checkbox] + span:before {
+.checkbox-filter-row input[type=checkbox] + label:before {
 	content: "";
 	display: inline-block;
 	width: 27px;
@@ -396,11 +439,11 @@ section h2 {
 	background: url(../img/checkbox-off.svg) no-repeat 0 0;
 	line-height: 23px;
 	vertical-align: top;
-	margin-right: 16px;
+	margin-right: 13px;
 
 }
 
-.infrastructure-accomodation-container input[type=checkbox]:checked + span:before {
+.checkbox-filter-row input[type=checkbox]:checked + label:before {
 	background-image: url(../img/checkbox-on.svg);
 }
 
@@ -409,11 +452,11 @@ section h2 {
 	font-size: 16px;
 	line-height: 21px;
 	color: var(--basic-white);
-	margin-top: 0;
+	margin: 0 0 24px;
 }
 
 .filter-price {
-	margin-bottom: 20px;
+	margin: -13px 0 20px;
 	display: flex;
 	width: 317px;
 	height: 36px;
@@ -434,11 +477,15 @@ section h2 {
 	color: var(--basic-white);
 	background: transparent;
 	width: 50px;
-	margin-right: -30px;
+	margin-right: -43px;
 }
 
 .filter-price label:last-child {
 	border-right: 0;
+}
+
+.filter-price label:last-child input {
+	margin-right: -30px;
 }
 
 .filter-price-button {
@@ -454,6 +501,8 @@ section h2 {
 	color: var(--basic-white);
 	display: block;
 	margin: 0 auto;
+	position: relative;
+	left: -4px;
 }
 
 .price-range-runner {
@@ -493,7 +542,7 @@ section h2 {
 .sorting-panel {
 	display: flex;
 	height: 86px;
-	line-height: 86px;
+	line-height: 90px;
 	border-bottom: 1px solid #E5E5E5;
 }
 
@@ -502,14 +551,20 @@ section h2 {
 	font-size: 21px;
 	line-height: 26px;
 	text-transform: uppercase;
-	margin-right: 46px;
+	margin-right: 44px;
 }
 
 .sorting-panel-title {
 	font-size: 12px;
 	line-height: 18px;
 	text-transform: uppercase;
-	margin-right: 40px;
+	margin-right: 36px;
+}
+
+.sorting-panel-title,
+.sorting-panel-option {
+	position: relative;
+	top: -5px;
 }
 
 .sorting-panel-option.chosen {
@@ -530,7 +585,7 @@ section h2 {
 	border-bottom: 1px dashed var(--basic-default-blue);
 	opacity: 0.3;
 	mix-blend-mode: normal;
-	margin-right: 32px;
+	margin-right: 29px;
 }
 
 .sorting-panel-option:hover {
@@ -581,13 +636,15 @@ section h2 {
 }
 
 .hotel-name {
-	margin: 0 0 10px;
+	margin: -5px 0 10px;
 	font-size: 21px;
-	line-height: 1
+	color: var(--basic-black);
+	line-height: 1;
+	font-weight: bold;
 }
 
 .hotel-info-text {
-	margin-bottom: 11.5px;
+	margin-bottom: 16px;
 }
 
 .hotel-info-text,
@@ -620,12 +677,12 @@ section h2 {
 
 .hotel-raiting-image {
 	text-align: right;
-	margin-bottom: 38px;
+	margin-bottom: 37px;
 }
 
 .hotel-raiting-text {
 	background-color: var(--basic-default-grey);
-	width: 110px;
+	padding: 0 12px;
 	height: 27px;
 	text-align: center;
 	color: var(--basic-raiting-grey);
@@ -646,11 +703,14 @@ section h2 {
 .footer-contacts {
 	font-weight: bold;
 	font-size: 21px;
-	line-height: 150%;
+	line-height: 35px;
 	text-align: center;
+	box-sizing: border-box;
+	padding: 0 0 13px 72px;
 }
 
 .page-footer {
+	height: 120px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -681,7 +741,7 @@ section h2 {
 
 .container-social-media ul a {
 	display: block;
-	margin: 6px;
+	margin: 7px 3px 0;
 }
 
 .page-footer p a {
@@ -692,12 +752,19 @@ section h2 {
 	width: 33%;
 }
 
+.footer-copyrights {
+	padding-right: 137px;
+    text-align: right;
+
+}
+
+
 .footer-copyrights > * {
 	height: 40px;
 	vertical-align: top;
 	display: inline-block;
 	line-height: 40px;
-	margin-left: 10px;
+	margin-left: 8px;
 }
 /*Catalog*/
 
@@ -705,11 +772,11 @@ section h2 {
 	display: flex;
 	flex-direction: column;
 	margin: 0;
-	padding: 0 0 104.4px;
+	padding: 0 0 120px;
 }
 
 .hotel-article {
-	height: 150px;
+	height: 151px;
 	display: flex;
 	justify-content: flex-start;
 	padding: 31px 73px; 

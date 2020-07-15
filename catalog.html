@@ -28,33 +28,33 @@
             <section class="catalog-filter-container">
                 <div class="infrastructure-accomodation-container">
                     <h3>Инфраструктура:</h3>
-                    <label>
-                        <input type="checkbox" name="filter1" value="1" checked>
-                        <span>Бассейн</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="filter1" value="2">
-                        <span>Парковка</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="filter1" value="3">
-                        <span>wi-fi</span>
-                    </label>
+                    <div class="checkbox-filter-row">
+                        <input id="filter1" type="checkbox" name="filter1" value="1" checked />
+                        <label for="filter1">Бассейн</label>
+                    </div>
+                    <div class="checkbox-filter-row">
+                        <input id="filter2" type="checkbox" name="filter2" value="2" />
+                        <label for="filter2">Парковка</label>
+                    </div>
+                    <div class="checkbox-filter-row">
+                        <input id="filter3" type="checkbox" name="filter3" value="3" />
+                        <label for="filter3">wi-fi</label>
+                    </div>
                 </div>
                 <div class="infrastructure-accomodation-container">
                     <h3>Тип жилья:</h3>
-                    <label>
-                        <input type="checkbox" name="filter1" value="1" checked>
-                        <span>Гостиница</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="filter1" value="2" checked>
-                        <span>Мотель</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="filter1" value="3" checked>
-                        <span>Апартаменты</span>
-                    </label>
+                    <div class="checkbox-filter-row">
+                        <input id="filter4" type="checkbox" name="filter4" value="4" checked />
+                        <label for="filter4">Гостиница</label>
+                    </div>
+                    <div class="checkbox-filter-row">
+                        <input id="filter5" type="checkbox" name="filter5" value="5" checked />
+                        <label for="filter5">Мотель</label>
+                    </div>
+                    <div class="checkbox-filter-row">
+                        <input id="filter6" type="checkbox" name="filter6" value="6" checked />
+                        <label for="filter6">Апартаменты</label>
+                    </div>
                 </div>
                 <div class="cost-per-day-container">
                     <h3>Стоимость в сутки (Р):</h3>
@@ -67,7 +67,7 @@
                         </label>
                     </div>
                     <div class="price-range-runner">
-                        <div class="price-range-runner-chosen" style="width: 80%;">
+                        <div class="price-range-runner-chosen" style="width: 86%;">
                             <div class="runner">
                             </div>
                             <div class="runner">
@@ -94,7 +94,7 @@
                 <div class="hotel-image-container"><img class="hotel-image" src="img/amara-resort.jpg" width=135 height=90 alt="Гостиница Amara resort">
                 </div>
                 <div class="hotel-container-left">
-                    <h2 class="hotel-name">Amara resort & Spa</h2>
+                    <a class="hotel-name" href="#">Amara resort & Spa</a>
                     <div class="hotel-info-container">
                         <div class="hotel-info-left">
                             <span class="hotel-info-text">Гостиница</span>
@@ -117,7 +117,7 @@
                 <div class="hotel-image-container"><img class="hotel-image" src="img/desert-quail-inn.jpg" width=135 height=90 alt="Мотель Desert Quail Inn">
                 </div>
                 <div class="hotel-container-left">
-                    <h2 class="hotel-name">Desert Quail Inn</h2>
+                    <a class="hotel-name" href="#">Desert Quail Inn</a>
                     <div class="hotel-info-container">
                         <div class="hotel-info-left">
                             <span class="hotel-info-text">Мотель</span>
@@ -140,7 +140,7 @@
                 <div class="hotel-image-container"><img class="hotel-image" src="img/villas-ad-poco-diablo.jpg" width=135 height=90 alt="Апартаменты Villas ad poco diablo">
                 </div>
                 <div class="hotel-container-left">
-                    <h2 class="hotel-name">Villas ad poco diablo</h2>
+                    <a class="hotel-name" href="#">Villas at poco diablo</a>
                     <div class="hotel-info-container">
                         <div class="hotel-info-left">
                             <span class="hotel-info-text">Апартаменты</span>
